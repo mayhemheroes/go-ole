@@ -1,0 +1,8 @@
+project: go-ole
+target: fuzz-guid
+cmds:
+  - cmd: /mayhem/fuzz-guid
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-guid/testsuite
